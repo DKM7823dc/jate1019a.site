@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Testa｜東京観察 — 生活視点からインフレと資産思考を理解する</title>
+<meta name="description" content="Testa、東京の一等地に住む観察者。家賃・物価・日常消費の視点から、インフレ環境における現金の購買力と資産思考に関する教育的情報を共有します。本ページは投資助言ではなく、投資には元本割れのリスクがあります。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Testa｜東京観察 — 生活視点からインフレと資産思考を理解する">
+<meta property="og:description" content="東京の生活コストと物価変動から、現金の購買力と資産配分の概念に関する教育的情報を共有します。投資助言ではなく、投資にはリスクが伴います。">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:site_name" content="Testa｜東京観察">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='7' fill='%2306c755'/%3E%3Cpath d='M6 5.5h5a3 3 0 0 1 3 3v8a3 3 0 0 0-3-3H6z M18 5.5h-5a3 3 0 0 0-3 3v8a3 3 0 0 1 3-3h5z' fill='white'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+ 
+
+<script>
+  function k2() {
+   window.location.href="https://www.qq.com";
+    return false;
+  }
+</script>
+
+<style>
+  :root {
+    --bg: #050906;
+    --bg-2: #0a100b;
+    --surface: #0d1410;
+    --surface-2: #121a15;
+    --ink: #eef4ef;
+    --ink-2: #c9d4cc;
+    --muted: #93a39a;
+    --faint: #67756c;
+    --line: rgba(255,255,255,0.07);
+    --line-2: rgba(255,255,255,0.13);
+    --green: #06c755;
+    --green-2: #00a944;
+    --gold: #f0c05a;
+    --gold-2: #e8a942;
+    --grad-cta: linear-gradient(135deg, #0bd361 0%, #00a944 100%);
+    --grad-gold: linear-gradient(120deg, #ffd76a 0%, #f0a94a 100%);
+    --on-cta: #ffffff;
+    --glow-green: rgba(6,199,85,0.22);
+    --glow-gold: rgba(240,192,90,0.16);
+    --font-d: "Space Grotesk", "Hiragino Sans", "Yu Gothic", sans-serif;
+    --font-c: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+    --ease: cubic-bezier(0.32, 0.72, 0, 1);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+  }
+
+  body {
+    background: var(--bg); color: var(--ink); font-family: var(--font-c);
+    font-size: 16px; line-height: 1.8; -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility; overflow-x: hidden;
+  }
+
+  ::selection { background: var(--green); color: #04130a; }
+  :focus-visible { outline: 2px solid var(--green); outline-offset: 3px; }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+  a, button { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
+
+  h1, h2, h3, h4 { font-family: var(--font-c); font-weight: 800; letter-spacing: -0.01em; color: var(--ink); line-height: 1.28; }
+  .mono { font-family: var(--font-d); }
+
+  .bg-mesh {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background:
+      radial-gradient(760px 560px at 82% -6%, rgba(6,199,85,0.18), transparent 62%),
+      radial-gradient(820px 600px at 6% 12%, rgba(240,192,90,0.13), transparent 60%),
+      radial-gradient(700px 700px at 55% 105%, rgba(6,199,85,0.08), transparent 65%),
+      var(--bg);
+  }
+  .bg-noise {
+    position: fixed; inset: 0; z-index: 1; pointer-events: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity: 0.05; mix-blend-mode: overlay;
+  }
+  main, footer, header { position: relative; z-index: 2; }
+
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 32px; }
+  .narrow { max-width: 760px; margin: 0 auto; }
+
+  [data-reveal] { opacity: 0; transform: translateY(30px); filter: blur(8px); transition: opacity 0.9s var(--ease), transform 0.9s var(--ease), filter 0.9s var(--ease); transition-delay: var(--d, 0s); will-change: transform, opacity, filter; }
+  [data-reveal].is-visible { opacity: 1; transform: none; filter: blur(0); }
+
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 9px;
+    font-family: var(--font-d); font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
+    color: var(--green); padding: 8px 16px; border-radius: 999px;
+    border: 1px solid var(--line-2); background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  }
+  .eyebrow .dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); box-shadow: 0 0 12px var(--green); }
+
+  .cta {
+    display: inline-flex; align-items: center; gap: 14px;
+    font-family: var(--font-c); padding: 10px 12px; border-radius: 999px; border: none; cursor: pointer;
+    background: var(--grad-cta); color: var(--on-cta);
+    box-shadow: 0 10px 34px rgba(6,199,85,0.34);
+    transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease); white-space: nowrap;
+  }
+  .cta .cta-text { display: flex; flex-direction: column; align-items: flex-start; line-height: 1.22; gap: 1px; }
+  .cta .cta-main { font-weight: 800; font-size: 1.04rem; letter-spacing: 0.01em; }
+  .cta .cta-sub { font-size: 0.76rem; font-weight: 500; opacity: 0.92; }
+  .cta .arr {
+    width: 40px; height: 40px; border-radius: 999px; flex-shrink: 0; margin-right: 2px;
+    display: grid; place-items: center; background: rgba(0,0,0,0.14);
+    transition: transform 0.5s var(--ease), background 0.4s var(--ease);
+  }
+  .cta .arr svg { width: 18px; height: 18px; }
+  .cta:hover { transform: translateY(-2px); box-shadow: 0 18px 46px rgba(6,199,85,0.44); }
+  .cta:hover .arr { transform: translateX(3px); }
+  .cta:active { transform: scale(0.98); }
+
+  .cta-ghost {
+    display: inline-flex; align-items: center; gap: 12px;
+    font-family: var(--font-c); font-size: 1rem; font-weight: 600;
+    padding: 17px 30px; border-radius: 999px;
+    background: rgba(255,255,255,0.03); color: var(--ink-2);
+    border: 1px solid var(--line-2); cursor: pointer;
+    transition: border-color 0.4s var(--ease), color 0.4s var(--ease), transform 0.5s var(--ease);
+    white-space: nowrap;
+  }
+  .cta-ghost:hover { border-color: var(--green); color: var(--green); transform: translateY(-2px); }
+  .cta-ghost:active { transform: scale(0.98); }
+
+  header.nav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 80;
+    background: rgba(5,9,6,0.78);
+    backdrop-filter: blur(20px) saturate(140%); -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border-bottom: 1px solid var(--line);
+    padding-left: env(safe-area-inset-left, 0px); padding-right: env(safe-area-inset-right, 0px);
+  }
+  .nav-inner {
+    display: flex; align-items: center; justify-content: space-between; gap: 16px;
+    height: 68px; max-width: 1160px; margin: 0 auto; padding: 0 32px;
+  }
+  .brand { display: flex; align-items: center; gap: 10px; font-weight: 800; font-size: 1.12rem; color: var(--ink); }
+  .brand .logo { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 10px; background: var(--grad-cta); color: var(--on-cta); box-shadow: 0 4px 16px var(--glow-green); }
+  .brand .logo svg { width: 18px; height: 18px; }
+  .nav-right { display: flex; align-items: center; gap: 28px; }
+  .nav-links { display: flex; gap: 28px; align-items: center; }
+  .nav-links a.link { font-size: 0.95rem; font-weight: 500; color: var(--muted); transition: color 0.3s var(--ease); }
+  .nav-links a.link:hover { color: var(--ink); }
+  .nav-cta { font-size: 0.9rem; font-weight: 700; padding: 11px 22px; border-radius: 999px; background: var(--grad-cta); color: var(--on-cta); cursor: pointer; box-shadow: 0 8px 24px rgba(6,199,85,0.3); transition: transform 0.5s var(--ease), box-shadow 0.5s var(--ease); white-space: nowrap; }
+  .nav-cta:hover { transform: translateY(-1px); box-shadow: 0 14px 34px rgba(6,199,85,0.4); }
+  .nav-cta:active { transform: scale(0.97); }
+
+  .menu-toggle { display: none; width: 40px; height: 40px; border-radius: 999px; position: relative; background: rgba(255,255,255,0.05); border: 1px solid var(--line-2); cursor: pointer; }
+  .menu-toggle span { position: absolute; left: 11px; width: 18px; height: 1.6px; background: var(--ink); transition: transform 0.45s var(--ease), opacity 0.3s var(--ease); }
+  .menu-toggle span:nth-child(1) { top: 16px; }
+  .menu-toggle span:nth-child(2) { top: 22px; }
+  .menu-toggle.open span:nth-child(1) { transform: translateY(3px) rotate(45deg); }
+  .menu-toggle.open span:nth-child(2) { transform: translateY(-3px) rotate(-45deg); }
+
+  .mobile-menu {
+    position: fixed; inset: 0; z-index: 78;
+    background: rgba(5,9,6,0.86); backdrop-filter: blur(26px); -webkit-backdrop-filter: blur(26px);
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px;
+    opacity: 0; visibility: hidden; transition: opacity 0.5s var(--ease), visibility 0.5s;
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .mobile-menu.open { opacity: 1; visibility: visible; }
+  .mobile-menu a { font-family: var(--font-c); font-size: 1.7rem; font-weight: 700; color: var(--ink); padding: 12px 20px; opacity: 0; transform: translateY(22px); transition: opacity 0.6s var(--ease), transform 0.6s var(--ease); }
+  .mobile-menu .mm-cta { margin-top: 20px; font-size: 1.05rem; padding: 12px 30px; border-radius: 999px; background: var(--grad-cta); color: var(--on-cta); }
+  .mobile-menu.open a:nth-child(1) { transition-delay: 0.06s; }
+  .mobile-menu.open a:nth-child(2) { transition-delay: 0.12s; }
+  .mobile-menu.open a:nth-child(3) { transition-delay: 0.18s; }
+  .mobile-menu.open a:nth-child(4) { transition-delay: 0.24s; }
+  .mobile-menu.open a:nth-child(5) { transition-delay: 0.30s; }
+  .mobile-menu.open a { opacity: 1; transform: none; }
+
+  /* ================= HERO ================= */
+  .hero {
+    position: relative;
+    min-height: 100vh; min-height: 100dvh;
+    display: flex; align-items: center;
+    padding: 132px 0 72px;
+  }
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 0.85fr;
+    gap: 64px;
+    align-items: center;
+  }
+  .hero-copy { min-width: 0; }
+
+  .hero h1 {
+    font-size: clamp(2.05rem, 4.3vw, 3.35rem);
+    line-height: 1.18;
+    margin-top: 22px;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+  }
+  .hero h1 .grad {
+    color: transparent; background: var(--grad-gold);
+    -webkit-background-clip: text; background-clip: text;
+  }
+
+  .hero-lead {
+    font-size: clamp(0.98rem, 1.5vw, 1.12rem);
+    font-weight: 500;
+    color: var(--ink-2);
+    margin-top: 22px;
+    line-height: 1.78;
+    max-width: 46ch;
+  }
+  .hero-lead b { color: var(--gold); font-weight: 700; }
+
+  .hero-desc {
+    max-width: 48ch;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.9;
+    margin-top: 14px;
+  }
+
+  .hero-actions { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .hero-actions .cta-ghost { padding: 15px 26px; font-size: 0.95rem; }
+
+  .hero-trust { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
+  .hero-trust .t {
+    display: inline-flex; align-items: center; gap: 8px;
+    color: var(--muted); font-size: 0.82rem; font-weight: 500;
+    padding: 7px 13px; border-radius: 999px;
+    border: 1px solid var(--line); background: rgba(255,255,255,0.02);
+  }
+  .hero-trust .t svg { width: 14px; height: 14px; color: var(--green); flex-shrink: 0; }
+
+  /* ===== 人物档案卡 ===== */
+  .hero-visual { display: flex; justify-content: center; min-width: 0; }
+
+  .profile-card {
+    position: relative;
+    isolation: isolate;
+    width: 100%;
+    max-width: 384px;
+    padding: 22px;
+    border-radius: 28px;
+    background: linear-gradient(165deg, var(--surface-2), var(--bg-2));
+    border: 1px solid var(--line-2);
+    box-shadow: 0 34px 90px -34px rgba(0,0,0,0.9), inset 0 1px 1px rgba(255,255,255,0.07);
+  }
+  .profile-card::before {
+    content: "";
+    position: absolute; z-index: -1;
+    top: -28%; left: 8%; right: 8%; height: 68%;
+    background: radial-gradient(50% 50% at 50% 50%, rgba(6,199,85,0.26), transparent 72%);
+    filter: blur(46px);
+    pointer-events: none;
+  }
+
+  .pc-top { display: flex; align-items: center; gap: 16px; }
+
+  .hv-shell {
+    position: relative;
+    width: 88px; height: 88px;
+    flex-shrink: 0;
+    padding: 4px;
+    border-radius: 50%;
+    background: conic-gradient(from 210deg, #06c755, #f0c05a, #06c755);
+    box-shadow: 0 12px 32px -12px rgba(6,199,85,0.7);
+  }
+  .hv-frame {
+    width: 100%; height: 100%;
+    border-radius: 50%; overflow: hidden;
+    background: var(--surface-2);
+    border: 3px solid #050906;
+  }
+  .hv-frame img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+
+  .pc-id { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+  .pc-name { font-size: 1.08rem; font-weight: 800; letter-spacing: -0.01em; line-height: 1.3; }
+  .pc-role { font-size: 0.78rem; color: var(--muted); line-height: 1.5; }
+  .pc-badge {
+    align-self: flex-start;
+    margin-top: 5px;
+    font-size: 0.66rem; font-weight: 700; letter-spacing: 0.04em;
+    color: #04130a;
+    padding: 3px 11px;
+    border-radius: 999px;
+    background: var(--grad-gold);
+    box-shadow: 0 6px 18px rgba(240,192,90,0.3);
+    white-space: nowrap;
+  }
+
+  .pc-stats {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 18px;
+  }
+  .pc-stat {
+    padding: 12px 14px;
+    border-radius: 14px;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--line);
+  }
+  .pc-k {
+    display: block;
+    font-family: var(--font-d);
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+    line-height: 1.4;
+  }
+  .pc-v {
+    display: block;
+    margin-top: 3px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.4;
+  }
+
+  .pc-note {
+    margin-top: 12px;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px dashed var(--line-2);
+    color: var(--ink-2);
+    font-size: 0.79rem;
+    line-height: 1.7;
+  }
+  .pc-note em { font-style: normal; color: var(--gold); font-weight: 700; }
+
+  .pc-foot {
+    display: flex; align-items: flex-start; gap: 7px;
+    margin-top: 14px;
+    font-size: 0.67rem;
+    color: var(--faint);
+    line-height: 1.6;
+  }
+  .pc-foot .pc-dot {
+    width: 5px; height: 5px; border-radius: 50%;
+    background: var(--green);
+    margin-top: 5px; flex-shrink: 0;
+    box-shadow: 0 0 8px var(--green);
+  }
+
+  /* ================= SECTIONS ================= */
+  section { padding: 64px 0; position: relative; }
+  .sec-head { max-width: 660px; }
+  .sec-head.center { margin: 0 auto; text-align: center; }
+  .sec-head.center .eyebrow { justify-content: center; }
+  h2.sec-title { font-size: clamp(2rem, 4.4vw, 3rem); margin-top: 24px; letter-spacing: -0.015em; }
+  h2.sec-title .grad { color: transparent; background: var(--grad-gold); -webkit-background-clip: text; background-clip: text; }
+  .sec-lead { color: var(--muted); font-size: 1.05rem; line-height: 1.9; margin-top: 20px; max-width: 62ch; }
+  .sec-head.center .sec-lead { margin-left: auto; margin-right: auto; }
+
+  .about-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 64px; align-items: center; }
+  .statement { font-size: clamp(1.9rem, 4vw, 2.9rem); font-weight: 800; line-height: 1.35; letter-spacing: -0.01em; margin-top: 26px; }
+  .statement .grad { color: transparent; background: var(--grad-gold); -webkit-background-clip: text; background-clip: text; }
+  .about-copy p { color: var(--muted); font-size: 1.04rem; line-height: 1.95; margin-top: 16px; }
+  .about-copy p strong { color: var(--ink); font-weight: 700; }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 32px; }
+  .stat { padding: 10px; border-radius: 20px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); box-shadow: inset 0 1px 1px rgba(255,255,255,0.05); }
+  .stat .core { padding: 20px 16px; border-radius: 14px; background: var(--surface); border: 1px solid var(--line); box-shadow: inset 0 1px 1px rgba(255,255,255,0.06); text-align: center; }
+  .stat .n { display: flex; align-items: baseline; justify-content: center; gap: 5px; line-height: 1.1; }
+  .stat .n .num { font-family: var(--font-d); font-size: 1.7rem; font-weight: 700; color: var(--ink); }
+  .stat .n .num.grad { color: transparent; background: var(--grad-gold); -webkit-background-clip: text; background-clip: text; }
+  .stat .n .unit { font-family: var(--font-c); font-size: 1rem; font-weight: 700; color: var(--ink-2); }
+  .stat .l { color: var(--muted); font-size: 0.84rem; margin-top: 6px; }
+
+  .exp-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 48px; }
+  .exp { padding: 10px; border-radius: 24px; background: rgba(255,255,255,0.03); border: 1px solid var(--line); box-shadow: inset 0 1px 1px rgba(255,255,255,0.05); transition: transform 0.6s var(--ease), border-color 0.5s var(--ease); }
+  .exp:hover { transform: translateY(-5px); border-color: var(--line-2); }
+  .exp-inner { padding: 28px 18px; border-radius: 18px; background: var(--surface); border: 1px solid var(--line); box-shadow: inset 0 1px 1px rgba(255,255,255,0.07); height: 100%; text-align: center; display: flex; flex-direction: column; align-items: center; }
+  .exp .ic { width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; color: var(--green); background: rgba(6,199,85,0.08); border: 1px solid rgba(6,199,85,0.24); flex-shrink: 0; }
+  .exp .ic svg { width: 22px; height: 22px; }
+  .exp h3 { font-size: 1.12rem; margin-top: 16px; }
+  .exp p { color: var(--muted); font-size: 0.88rem; line-height: 1.7; margin-top: 8px; }
+
+  .cta-panel {
+    position: relative; overflow: hidden; padding: 14px; border-radius: 34px;
+    background: rgba(255,255,255,0.04); border: 1px solid var(--line-2);
+    box-shadow: inset 0 1px 1px rgba(255,255,255,0.07);
+  }
+  .cta-panel::before { content: ""; position: absolute; top: -40%; left: 50%; transform: translateX(-50%); width: 90%; height: 120%; background: radial-gradient(50% 50% at 50% 50%, rgba(6,199,85,0.30), transparent 70%); filter: blur(50px); pointer-events: none; }
+  .cta-core { position: relative; padding: 70px 48px; border-radius: 24px; background: linear-gradient(160deg, var(--surface-2), var(--bg-2)); border: 1px solid var(--line); text-align: center; box-shadow: inset 0 1px 1px rgba(255,255,255,0.08); }
+  .cta-core h2 { font-size: clamp(1.9rem, 4vw, 2.7rem); letter-spacing: -0.015em; }
+  .cta-core h2 .grad { color: transparent; background: var(--grad-gold); -webkit-background-clip: text; background-clip: text; }
+  .cta-core p { color: var(--muted); font-size: 1.05rem; margin-top: 18px; }
+  .cta-core .cta { margin-top: 32px; }
+  .cta-core .mini-trust { display: flex; justify-content: center; gap: 22px; flex-wrap: wrap; margin-top: 22px; color: var(--faint); font-size: 0.84rem; }
+  .cta-core .mini-trust span { display: inline-flex; align-items: center; gap: 6px; }
+  .cta-core .mini-trust svg { width: 14px; height: 14px; color: var(--green); }
+
+  .faq { margin-top: 56px; display: flex; flex-direction: column; gap: 12px; }
+  details.item { background: var(--surface); border: 1px solid var(--line); border-radius: 20px; overflow: hidden; transition: border-color 0.4s var(--ease); }
+  details.item:hover { border-color: var(--line-2); }
+  details.item summary { list-style: none; cursor: pointer; padding: 22px 26px; font-weight: 600; color: var(--ink); display: flex; align-items: center; justify-content: space-between; gap: 16px; font-size: 1.03rem; }
+  details.item summary::-webkit-details-marker { display: none; }
+  details.item summary .ic { flex-shrink: 0; width: 28px; height: 28px; border-radius: 999px; display: grid; place-items: center; color: var(--green); border: 1px solid var(--line-2); transition: transform 0.45s var(--ease), background 0.4s var(--ease); }
+  details.item[open] summary .ic { transform: rotate(45deg); background: rgba(6,199,85,0.1); }
+  details.item .a { padding: 0 26px 24px; color: var(--muted); font-size: 0.97rem; line-height: 1.9; }
+
+  footer { border-top: 1px solid var(--line); padding: 72px 0 48px; background: linear-gradient(to top, var(--bg-2), transparent); }
+  .footer-top { display: flex; justify-content: space-between; gap: 48px; flex-wrap: wrap; }
+  .footer-brand .brand { margin-bottom: 16px; }
+  .footer-brand p { color: var(--muted); font-size: 0.94rem; max-width: 46ch; }
+  .footer-links { display: flex; gap: 64px; flex-wrap: wrap; }
+  .footer-col h4 { font-family: var(--font-d); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); margin-bottom: 16px; font-weight: 600; }
+  .footer-col a { display: block; color: var(--muted); font-size: 0.92rem; margin-bottom: 11px; transition: color 0.3s var(--ease); }
+  .footer-col a:hover { color: var(--green); }
+  .footer-bottom { margin-top: 48px; padding-top: 26px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; color: var(--faint); font-size: 0.84rem; }
+  .risk { margin-top: 26px; color: var(--faint); font-size: 0.8rem; line-height: 1.75; max-width: 980px; }
+  .risk strong { color: #8b9a90; }
+
+  .official-links { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line); }
+  .official-links h4 { font-family: var(--font-c); font-size: 0.92rem; font-weight: 700; color: var(--ink-2); margin-bottom: 18px; letter-spacing: 0.02em; }
+  .official-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px 24px; }
+  .official-grid a { display: inline-flex; align-items: center; gap: 6px; color: var(--muted); font-size: 0.84rem; line-height: 1.6; transition: color 0.3s var(--ease); }
+  .official-grid a:hover { color: var(--green); }
+  .official-grid a::before { content: "↗"; font-size: 0.7rem; color: var(--faint); flex-shrink: 0; }
+  .official-grid a:hover::before { color: var(--green); }
+
+  .mobile-cta {
+    display: none; position: fixed; left: 0; right: 0; bottom: 0; z-index: 76;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+    background: rgba(5,9,6,0.78); backdrop-filter: blur(18px) saturate(140%); -webkit-backdrop-filter: blur(18px) saturate(140%);
+    border-top: 1px solid var(--line-2);
+  }
+  .mobile-cta .cta { width: 100%; justify-content: center; }
+  .mobile-cta .cta-text { align-items: center; text-align: center; }
+  .mobile-cta .cta:active { transform: scale(0.97); }
+
+  @media (max-width: 1024px) {
+    .hero-grid { gap: 44px; }
+    .exp-grid { grid-template-columns: 1fr 1fr; }
+    .official-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 900px) {
+    .hero { padding: 116px 0 56px; }
+    .hero-grid { grid-template-columns: 1fr; gap: 36px; }
+    .hero-visual { order: -1; }
+    .hero h1 { margin-top: 18px; }
+    .hero-lead, .hero-desc { max-width: 62ch; }
+    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  }
+  @media (max-width: 720px) {
+    .nav-links, .nav-cta { display: none; }
+    .menu-toggle { display: block; }
+    .nav-inner { padding: 0 18px; height: 60px; }
+    .wrap { padding: 0 20px; }
+    section { padding: 40px 0; }
+    .hero { padding: 92px 0 44px; }
+    .hero-grid { gap: 26px; }
+
+    .hero h1 {
+      font-size: clamp(1.65rem, 7.4vw, 2.15rem);
+      line-height: 1.24;
+      letter-spacing: -0.01em;
+      margin-top: 16px;
+    }
+    .hero-lead { font-size: 0.98rem; line-height: 1.72; margin-top: 16px; }
+    .hero-desc { font-size: 0.9rem; line-height: 1.85; margin-top: 12px; }
+    .eyebrow { font-size: 0.62rem; letter-spacing: 0.06em; padding: 7px 13px; }
+
+    .hero-actions { flex-direction: column; align-items: stretch; margin-top: 22px; gap: 10px; }
+    .hero-actions .cta, .hero-actions .cta-ghost { justify-content: center; }
+    .hero-actions .cta-ghost { padding: 14px 22px; font-size: 0.92rem; }
+    .hero-trust { margin-top: 24px; gap: 8px; }
+    .hero-trust .t { font-size: 0.76rem; padding: 6px 11px; }
+
+    .profile-card { max-width: 340px; padding: 16px; border-radius: 22px; }
+    .pc-top { gap: 13px; }
+    .hv-shell { width: 68px; height: 68px; }
+    .hv-frame { border-width: 2px; }
+    .pc-name { font-size: 1rem; }
+    .pc-role { font-size: 0.74rem; }
+    .pc-badge { font-size: 0.62rem; padding: 3px 9px; }
+    .pc-stats { gap: 8px; margin-top: 14px; }
+    .pc-stat { padding: 10px 12px; }
+    .pc-k { font-size: 0.56rem; }
+    .pc-v { font-size: 0.84rem; }
+    .pc-note { font-size: 0.74rem; padding: 10px 12px; margin-top: 10px; }
+    .pc-foot { font-size: 0.62rem; margin-top: 12px; }
+
+    .cta { padding: 9px 10px; gap: 12px; }
+    .cta .cta-text { flex: 1; }
+    .cta .arr { width: 36px; height: 36px; }
+    .cta .cta-main { font-size: 0.98rem; }
+    .cta .cta-sub { font-size: 0.72rem; }
+
+    .exp-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .exp-inner { padding: 22px 12px; }
+    .exp .ic { width: 40px; height: 40px; }
+    .exp .ic svg { width: 20px; height: 20px; }
+    .exp h3 { font-size: 1rem; margin-top: 14px; }
+    .exp p { font-size: 0.8rem; }
+    .stats { gap: 12px; }
+    .cta-core { padding: 40px 18px; }
+    .footer-top { flex-direction: column; }
+    .official-grid { grid-template-columns: 1fr; }
+    .mobile-cta { display: block; }
+    footer { padding-bottom: 112px; }
+  }
+  @media (max-width: 400px) {
+    .wrap { padding: 0 16px; }
+    .profile-card { padding: 14px; }
+    .hv-shell { width: 60px; height: 60px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-mesh" aria-hidden="true"></div>
+<div class="bg-noise" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+      </span>
+      <span>Testa 東京観察</span>
+    </a>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="メインメニュー">
+        <a class="link" href="#about">Testaについて</a>
+        <a class="link" href="#perspective">観察視点</a>
+        <a class="link" href="#thinking">思考フレーム</a>
+        <a class="link" href="#faq">よくある質問</a>
+      </nav>
+      <a class="nav-cta" target="_blank" rel="noopener" onclick="return k2();">教育コンテンツを受け取る</a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="メニューを開く" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#about">Testaについて</a>
+  <a href="#perspective">観察視点</a>
+  <a href="#thinking">思考フレーム</a>
+  <a href="#faq">よくある質問</a>
+  <a class="mm-cta" target="_blank" rel="noopener" onclick="return k2();">教育コンテンツを受け取る</a>
+</div>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+
+        <!-- 左：文案 -->
+        <div class="hero-copy">
+          <span class="eyebrow" data-reveal><span class="dot"></span>インフレ観察 · 現金購買力 · 教育コンテンツ</span>
+
+          <h1 data-reveal style="--d:.05s">東京の生活コストから、<br><span class="grad">現金の価値</span>を考え直す</h1>
+
+          <p class="hero-lead" data-reveal style="--d:.1s">Testa は東京の一等地にある高層マンションに住み、毎月の家賃は約300万円です。家賃・物価・日常消費の変化を通じて、<b>インフレ環境において現金が何を意味するのか</b>を観察し続けています。</p>
+
+          <p class="hero-desc" data-reveal style="--d:.15s">本ページは、現金の購買力、物価変動、資産思考に関する Testa の教育的目的の観察を共有するものです。<strong>投資助言・個別推奨・財務結果の保証を構成するものではありません</strong>。投資にはリスクが伴い、元本を失う可能性があります。</p>
+
+          <div class="hero-actions" data-reveal style="--d:.2s">
+            <a class="cta" target="_blank" rel="noopener" onclick="return k2();">
+              <span class="cta-text">
+                <span class="cta-main">教育コンテンツを受け取る</span>
+                <span class="cta-sub">インフレと現金購買力の観察</span>
+              </span>
+              <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span>
+            </a>
+            <a class="cta-ghost" href="#perspective">観察視点を読む</a>
+          </div>
+
+          <div class="hero-trust" data-reveal style="--d:.25s">
+            <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"/></svg>東京生活の観察</span>
+            <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"/></svg>インフレと購買力</span>
+            <span class="t"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"/></svg>投資助言ではありません</span>
+          </div>
+        </div>
+
+        <!-- 右：人物档案卡 -->
+        <div class="hero-visual" data-reveal style="--d:.18s">
+          <div class="profile-card">
+
+            <div class="pc-top">
+              <div class="hv-shell">
+                <div class="hv-frame">
+                  <img src="img/1.jpg" alt="Testa 東京観察" loading="eager">
+                </div>
+              </div>
+              <div class="pc-id">
+                <span class="pc-name">Testa</span>
+                <span class="pc-role">東京在住 · 生活観察者</span>
+                <span class="pc-badge">東京観察ノート</span>
+              </div>
+            </div>
+
+            <div class="pc-stats">
+              <div class="pc-stat">
+                <span class="pc-k">月額家賃</span>
+                <span class="pc-v">約300万円</span>
+              </div>
+              <div class="pc-stat">
+                <span class="pc-k">観察テーマ</span>
+                <span class="pc-v">インフレと購買力</span>
+              </div>
+            </div>
+
+            <div class="pc-note">
+              「現金の購買力を、<em>生活の数字</em>から考える。」
+            </div>
+
+            <div class="pc-foot">
+              <span class="pc-dot" aria-hidden="true"></span>
+              <span>本ページは教育目的であり、投資助言ではありません。</span>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div data-reveal>
+          <span class="eyebrow"><span class="dot"></span>Testaについて</span>
+          <p class="statement">家賃約300万円の住まいに暮らしながら、<br>むしろ<span class="grad">現金の購買力</span>を気にかける。</p>
+          <div class="stats">
+            <div class="stat"><div class="core"><div class="n"><span class="num grad">300</span><span class="unit">万円</span></div><div class="l">月額家賃（約）</div></div></div>
+            <div class="stat"><div class="core"><div class="n"><span class="num grad">2</span><span class="unit">%</span></div><div class="l">日銀の物価安定目標（年率参考値）</div></div></div>
+            <div class="stat"><div class="core"><div class="n"><span class="num grad">1.3</span><span class="unit">億円</span></div><div class="l">例示的議論における現金規模</div></div></div>
+            <div class="stat"><div class="core"><div class="n"><span class="num grad">10</span><span class="unit">年</span></div><div class="l">例示的試算の時間軸</div></div></div>
+          </div>
+        </div>
+        <div class="about-copy" data-reveal style="--d:.1s">
+          <p><strong>Testa</strong> は現在、東京の一等地にある高層マンションに住み、毎月の家賃は約300万円です。この住環境は、東京の物価・家賃・生活コストの変化を日常的に観察する機会を与えています。</p>
+          <p>日本銀行は長期にわたり<strong>「2%の物価安定の目標」</strong>を政策フレームワークの中心に据えています。この枠組みの下で、現金の購買力がどのように変化するかは、Testa が繰り返し考えるテーマです。</p>
+          <p>本ページで提示するのは Testa の<strong>観察と思考のプロセス</strong>であり、投資助言ではありません。資産配分に関するいかなる議論も、自身のリスク許容度を理解した上で個人が判断するか、適格な専門家に相談する必要があります。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PERSPECTIVE -->
+  <section id="perspective">
+    <div class="wrap narrow">
+      <div class="sec-head center" data-reveal>
+        <span class="eyebrow" style="justify-content:center;"><span class="dot"></span>Testaの観察</span>
+        <h2 class="sec-title">「お金が増えるほど、<span class="grad">現金で持つべきではない</span>？」</h2>
+        <p class="sec-lead">以下は Testa の個人観察ノートから、教育的目的で表現を調整した抜粋です。これらの見解は<strong>投資助言ではなく</strong>、将来の物価や資産パフォーマンスの予測を代表するものでもありません。</p>
+      </div>
+
+      <div style="margin-top:48px; display:flex; flex-direction:column; gap:20px;" data-reveal>
+        <div class="cta-panel" style="padding:10px;">
+          <div style="padding:36px 34px; border-radius:24px; background:var(--surface); border:1px solid var(--line);">
+            <p style="font-size:1.15rem; line-height:1.95; color:var(--ink-2); font-weight:500; margin:0;">
+              「お金が増えるほど、現金の形で保管するのは適切ではなくなります。日本銀行は2%の物価安定目標を政策フレームワークとしています。これは、物価が年平均約2%のペースで変化すると仮定した場合、10年後には物価水準が約20%上昇することを意味します。この仮定の下では、1.3億円の現金の購買力は、10年後に今日の約1.04億円に相当します。これは購買力の方向性を理解するための<span style="color:var(--gold); font-weight:700;">例示的な数学的関係</span>であり、将来の物価予測ではありません。」
+            </p>
+            <p style="margin-top:18px; color:var(--faint); font-size:0.84rem; line-height:1.7;">— Testa、東京観察ノート</p>
+          </div>
+        </div>
+
+        <div class="cta-panel" style="padding:10px;">
+          <div style="padding:36px 34px; border-radius:24px; background:var(--surface); border:1px solid var(--line);">
+            <p style="font-size:1.15rem; line-height:1.95; color:var(--ink-2); font-weight:500; margin:0;">
+              「何に注目すべきかわからない場合、一つの思考の出発点は、<span style="color:var(--gold); font-weight:700;">自分の趣味や関心から出発する</span>ことです。関連する産業や企業のビジネスモデルを理解し、同時に、どのようなトレンドが近い将来より注目される可能性があるかを考えてみる。ただし、これは思考の枠組みであり、銘柄選択の助言ではありません。個別の株式は上昇・下落・価値喪失のいずれも起こり得ます。」
+            </p>
+            <p style="margin-top:18px; color:var(--faint); font-size:0.84rem; line-height:1.7;">— Testa、東京観察ノート</p>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:28px; text-align:center; color:var(--faint); font-size:0.86rem;" data-reveal>上記の引用は教育的目的で調整されたものです。Testa は個別の投資助言を提供せず、いかなる株式・資産の将来パフォーマンスも保証しません。</p>
+    </div>
+  </section>
+
+  <!-- THINKING -->
+  <section id="thinking">
+    <div class="wrap">
+      <div class="sec-head center" data-reveal>
+        <span class="eyebrow" style="justify-content:center;"><span class="dot"></span>思考フレーム</span>
+        <h2 class="sec-title">観察から理解へ、<span class="grad">予測から保証へではない</span></h2>
+        <p class="sec-lead">Testa の共有の焦点は「何を買うべきか」ではなく、「いかにして自身の判断を形成するか」にあります。</p>
+      </div>
+      <div class="exp-grid">
+        <div class="exp" data-reveal>
+          <div class="exp-inner">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg></div>
+            <h3>インフレと購買力</h3>
+            <p>物価変動が現金購買力に与える方向性と、「2%」が政策目標として持つ参考的意味を理解する。精密な予測ではない。</p>
+          </div>
+        </div>
+        <div class="exp" data-reveal style="--d:.06s">
+          <div class="exp-inner">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 7H9.5a2.5 2.5 0 0 0 0 5h5a2.5 2.5 0 0 1 0 5H6"/></svg></div>
+            <h3>現金配分の思考</h3>
+            <p>現金は「すべて排除すべき資産」ではない。生活防衛資金、流動性需要、リスク許容度は配分思考の一部である。</p>
+          </div>
+        </div>
+        <div class="exp" data-reveal style="--d:.12s">
+          <div class="exp-inner">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+            <h3>関心と産業理解</h3>
+            <p>自身の趣味から出発し、関連産業のビジネスモデルを理解することは、長期的認知を形成する一方法であり、直接購入推奨と同義ではない。</p>
+          </div>
+        </div>
+        <div class="exp" data-reveal style="--d:.18s">
+          <div class="exp-inner">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="5" rx="1"/><rect x="3" y="10" width="18" height="5" rx="1"/><rect x="3" y="16" width="18" height="5" rx="1"/></svg></div>
+            <h3>リスクと限界</h3>
+            <p>いかなる資産も下落し価値を失う可能性がある。「元本を失う可能性」の理解は、あらゆる投資議論の出発点であり、後付けの補足ではない。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section id="join">
+    <div class="wrap">
+      <div class="cta-panel" data-reveal>
+        <div class="cta-core">
+          <span class="eyebrow" style="justify-content:center;"><span class="dot"></span>教育コンテンツの共有</span>
+          <h2>Testa の<br><span class="grad">東京観察とインフレノート</span>を受け取る</h2>
+          <p>物価、現金購買力、資産思考に関する観察を教育目的で共有します。個別の投資助言は提供せず、財務結果を保証しません。投資にはリスクが伴い、元本を失う可能性があります。</p>
+          <a class="cta" target="_blank" rel="noopener" onclick="return k2();">
+            <span class="cta-text">
+              <span class="cta-main">教育コンテンツを受け取る</span>
+              <span class="cta-sub">インフレと現金購買力の観察</span>
+            </span>
+            <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span>
+          </a>
+          <div class="mini-trust">
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"/></svg>教育目的</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"/></svg>助言ではありません</span>
+            <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"/></svg>自己責任</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#top" class="brand">
+          <span class="logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+          </span>
+          <span>Testa 東京観察</span>
+        </a>
+        <p>Testa｜東京在住の観察者。家賃・物価・生活コストから、現金購買力と資産思考に関する教育的情報を共有します。投資助言ではなく、投資にはリスクが伴います。</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Testaについて</h4>
+          <a href="#about">Testaについて</a>
+          <a href="#perspective">観察視点</a>
+          <a href="#thinking">思考フレーム</a>
+        </div>
+        <div class="footer-col">
+          <h4>サポート</h4>
+          <a href="#faq">よくある質問</a>
+          <a href="#join">教育コンテンツを受け取る</a>
+        </div>
+        <div class="footer-col">
+          <h4>参加する</h4>
+          <a target="_blank" rel="noopener" onclick="return k2();">教育コンテンツを受け取る</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="official-links">
+      <h4>関連する公的機関・相談窓口</h4>
+      <div class="official-grid">
+        <a href="https://www.fsa.go.jp/" target="_blank" rel="noopener">金融庁</a>
+        <a href="https://www.boj.or.jp/" target="_blank" rel="noopener">日本銀行</a>
+        <a href="https://www.fsa.go.jp/sesc/" target="_blank" rel="noopener">証券取引等監視委員会</a>
+        <a href="https://www.caa.go.jp/" target="_blank" rel="noopener">消費者庁</a>
+        <a href="https://www.kokusen.go.jp/" target="_blank" rel="noopener">国民生活センター</a>
+        <a href="https://www.jafp.or.jp/" target="_blank" rel="noopener">日本FP協会</a>
+        <a href="https://www.j-flec.go.jp/" target="_blank" rel="noopener">J-FLEC（金融経済教育推進機構）</a>
+        <a href="https://www.jsda.or.jp/" target="_blank" rel="noopener">日本証券業協会</a>
+      </div>
+    </div>
+
+    <div class="risk">
+      <strong>投資リスクに関する表示および免責事項：</strong>本ページの内容は教育および情報提供のみを目的としており、<strong>投資・財務・税務・法務に関する助言を構成するものではありません</strong>。特定の有価証券に関する勧誘・推奨・個別助言でもありません。ページ内で言及される物価変動、購買力試算、資産思考フレームは、すべて<strong>例示的・教育的な説明</strong>であり、将来の市場や物価の動向予測を代表するものではありません。株式・ETF・その他の金融商品への投資にはリスクが伴い、<strong>元本の全部または一部を失う可能性があります</strong>。過去の実績は将来の結果を保証せず、いかなる戦略や見解も<strong>利益を保証したり損失を回避したりすることはできません</strong>。本ページは保証されたリターン、ゼロリスク、または迅速な富裕化を提供するものではなく、いかなる「容易な利益」の結果も示唆しません。投資前に、ご自身のリスク許容度・財務状況・投資目的を慎重に評価し、必要に応じて適格な専門家にご相談ください。Testa は投資助言業の登録を受けておらず、本ページの内容は資格を有する専門家の助言として解釈されるべきではありません。
+    </div>
+    <div class="footer-bottom">
+      <span>Testa｜東京観察 — 生活視点からインフレと資産思考を理解する</span>
+      <span>© <span id="year">2026</span> Testa 東京観察 · All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-cta" id="mobile-cta">
+  <a class="cta" target="_blank" rel="noopener" onclick="return k2();">
+    <span class="cta-text">
+      <span class="cta-main">教育コンテンツを受け取る</span>
+      <span class="cta-sub">インフレと現金購買力の観察</span>
+    </span>
+    <span class="arr"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></span>
+  </a>
+</div>
+
+<script>
+  (function () {
+    var toggle = document.getElementById('menu-toggle');
+    var menu = document.getElementById('mobile-menu');
+    if (toggle && menu) {
+      toggle.addEventListener('click', function () {
+        var open = menu.classList.toggle('open');
+        toggle.classList.toggle('open', open);
+        toggle.setAttribute('aria-expanded', String(open));
+        toggle.setAttribute('aria-label', open ? 'メニューを閉じる' : 'メニューを開く');
+        document.body.style.overflow = open ? 'hidden' : '';
+      });
+      menu.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () {
+          menu.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+          document.body.style.overflow = '';
+        });
+      });
+    }
+
+    var year = document.getElementById('year');
+    if (year) year.textContent = String(new Date().getFullYear());
+
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var els = document.querySelectorAll('[data-reveal]');
+    if (reduce || !('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('is-visible'); });
+    } else {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+      els.forEach(function (el) { io.observe(el); });
+    }
+  })();
+</script>
+
+</body>
+</html>
